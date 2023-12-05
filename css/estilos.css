@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@import url(variables.css);
+
+/* font-family: 'Outfit', sans-serif;
+400
+700
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 15px;
+  overflow: hidden;
+  background-color: var(--Light-gray);
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main,
+.main__qr--img {
+  border-radius: var(--radius1);
+}
+
+.main__qr {
+  display: flex;
+  justify-content: center;
+}
+
+.main__qr--img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.main__descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.main__descripcion--titulo {
+  font-weight: 700;
+}
+
+.main__descripcion--parrafo {
+  font-size: 15px;
+  color: var(--Grayish-blue);
+  font-weight: 400;
+}
+
+.footer {
+}
+
+@media (min-width: 676px) {
+  .main {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main {
+    width: 25%;
+  }
+
+  .main__qr {
+    width: 100%;
+  }
+  .main__qr--img {
+    max-width: none;
+  }
+}
